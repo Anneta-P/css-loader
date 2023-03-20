@@ -9,7 +9,6 @@
   --_m: conic-gradient(#0000, #000), linear-gradient(#000 0 0) content-box;
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
 
-  /* -webkit-mask: var(--_m); */
   mask: var(--_m);
   -webkit-mask-composite: source-out;
   mask-composite: subtract;
@@ -28,16 +27,15 @@ body {
   display: grid;
   min-height: 100vh;
   place-content: center;
-  background: #e4e4e4;
 
-  animation: change 5s infinite ease-in-out;
+  animation: change 10s infinite ease-in-out;
 }
 
 @keyframes change {
-  0% {
-    background: #e4e4e4;
-  }
   20% {
-    background: #d4e0ef;
+    background: #f3f2e0;
+  }
+  40% {
+    background: #c5daf4;
   }
 }
