@@ -1,11 +1,15 @@
 .loader {
-  width: 45px;
+  width: 50px;
   padding: 7px;
-  background: #8b9192;
+  background: radial-gradient(farthest-side, #9c9d9f 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 10%, #9e9ea0);
   aspect-ratio: 1;
   border-radius: 50%;
   --_m: conic-gradient(#0000, #000), linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+
+  /* -webkit-mask: var(--_m); */
   mask: var(--_m);
   -webkit-mask-composite: source-out;
   mask-composite: subtract;
